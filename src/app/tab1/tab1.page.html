@@ -1,17 +1,36 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <div class="header">
+      <h3>Olá, <span class="text-primary">Vini</span></h3>
+      <img src="https://cdn-icons.flaticon.com/png/512/552/premium/552721.png?token=exp=1658969348~hmac=1e2d52bccd4c62c907e31b45bfd2ee39" alt="User image">
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+ 
+  <section class="total-balance">
+    <p class="text-muted">Balanço Total</p>
+    <h1>R$ 19,93</h1>
+    <small class="text-success">
+      <ion-icon name="trending-up-outline"></ion-icon>
+      2,8% hoje
+    </small>
+ </section>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+ <section class="pix-area">
+    <div class="title-line">
+      <p>Área do Pix</p>
+      <div class="line"></div>
+    </div>
+ </section>
+
+ <section class="pix-area">
+  <div class="title-line">
+    <p>Meus Cartões</p>
+    <div class="line" style="width: 62%;"></div>
+  </div>
+</section>
+
+
 </ion-content>
